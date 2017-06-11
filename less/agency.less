@@ -534,7 +534,9 @@ aside.clients {
 
 // Contact Section
 
-section#contact {
+section.has-form {
+    @placeholder-text-color: @gray;
+
     background-color: @gray-darker;
     background-image: url('../img/map-image.png');
     background-position: center;
@@ -562,22 +564,22 @@ section#contact {
     ::-webkit-input-placeholder {
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: @placeholder-text-color;
     }
     :-moz-placeholder { /* Firefox 18- */
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: @placeholder-text-color;
     }
     ::-moz-placeholder {  /* Firefox 19+ */
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: @placeholder-text-color;
     }
     :-ms-input-placeholder {
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: @placeholder-text-color;
     }
     .text-danger {
         color: @theme-danger;

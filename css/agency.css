@@ -553,59 +553,59 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
-section#contact {
+section.has-form {
   background-color: #222222;
   background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
-section#contact .section-heading {
+section.has-form .section-heading {
   color: white;
 }
-section#contact .form-group {
+section.has-form .form-group {
   margin-bottom: 25px;
 }
-section#contact .form-group input,
-section#contact .form-group textarea {
+section.has-form .form-group input,
+section.has-form .form-group textarea {
   padding: 20px;
 }
-section#contact .form-group input.form-control {
+section.has-form .form-group input.form-control {
   height: auto;
 }
-section#contact .form-group textarea.form-control {
+section.has-form .form-group textarea.form-control {
   height: 236px;
 }
-section#contact .form-control:focus {
+section.has-form .form-control:focus {
   border-color: #ff9989;
   box-shadow: none;
 }
-section#contact ::-webkit-input-placeholder {
+section.has-form ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #555555;
 }
-section#contact :-moz-placeholder {
+section.has-form :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #555555;
 }
-section#contact ::-moz-placeholder {
+section.has-form ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #555555;
 }
-section#contact :-ms-input-placeholder {
+section.has-form :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #555555;
 }
-section#contact .text-danger {
+section.has-form .text-danger {
   color: #e74c3c;
 }
 footer {
