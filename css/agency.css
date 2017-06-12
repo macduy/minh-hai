@@ -555,9 +555,9 @@ aside.clients img {
 }
 section.has-form {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
+  background-image: url('../img/mail-bg.png');
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 section.has-form .section-heading {
   color: white;
@@ -583,27 +583,27 @@ section.has-form ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #555555;
+  color: #777777;
 }
 section.has-form :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #555555;
+  color: #777777;
 }
 section.has-form ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #555555;
+  color: #777777;
 }
 section.has-form :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #555555;
+  color: #777777;
 }
 section.has-form .text-danger {
   color: #e74c3c;
