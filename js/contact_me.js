@@ -65,10 +65,19 @@ $(function() {
     });
 });
 
-$('form[name=sendRsvp]').on('submit', function() {
-  $(this).hide();
-  $('#rsvpResponse').show();
+var form = $('form[name=sendRsvp]');
+var successMessage = $('#rsvpResponse');
+
+form.on('submit', function() {
+  form.animate({ height: "hide", opacity: "hide"});
+  successMessage.animate({ height: "show", opacity: "show"});
 })
+
+$('#resetForm').on('click', function() {
+  form.trigger('reset');
+  form.animate({ height: "show", opacity: "show"});
+  successMessage.animate({ height: "hide", opacity: "hide"});
+});
 
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
