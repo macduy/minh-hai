@@ -65,6 +65,10 @@ $(function() {
     });
 });
 
+$('form[name=sendRsvp]').on('submit', function() {
+  $(this).hide();
+  $('#rsvpResponse').show();
+})
 
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
