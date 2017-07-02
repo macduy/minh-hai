@@ -7,6 +7,12 @@ body {
   overflow-x: hidden;
   font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+label {
+  font-weight: normal;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+}
 .text-muted {
   color: #777777;
 }
