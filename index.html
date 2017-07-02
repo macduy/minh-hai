@@ -32,6 +32,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+
 </head>
 
 <body id="page-top" class="index">
@@ -450,7 +452,7 @@
                 <div class="col-lg-12" style="display:none" id="rsvpResponse">
                     Your submission has been successfully recorded.
 
-                    <a id="resetForm">Reset form</a>
+                    <button id="resetForm" type="submit" class="btn btn-primary">Reset form</button>
                 </div>
                 <div class="col-lg-12">
                     <form name="sendRsvp" enctype="text/plain" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSfYkG27X2DVLXo818AdS-grz7xnbm6VRflOYI8-9vQcXS4hYA/formResponse?">
@@ -461,28 +463,32 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="entry.1011176109" class="form-control" placeholder="* Attending? 'Yes' or a creative excuse" required data-validation-required-message="You have to let us know if you're coming.">
+                                    <div class="width: 50%">
+                                        <input type="radio" id="entry1011176109yes" name="entry.1011176109" required data-validation-required-message="You have to let us know if you're coming." value="Yes">
+                                        <label for="entry1011176109yes">Accepts with pleasure</label>
+                                    </div>
+                                    <div class="width: 50%">
+                                        <input type="radio" id="entry1011176109no" name="entry.1011176109" required data-validation-required-message="You have to let us know if you're coming." value="No">
+                                        <label for="entry1011176109no">Declines with regrets</label>
+                                    </div>
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <input type="text" name="entry.1563863328" class="form-control" placeholder="Dietary requirements">
                                     <p class="help-block text-danger"></p>
-                                </div>
+                                </div> -->
                                 <div class="form-group">
-                                    <div>
-                                        Would you like the vegetarian dinner option? <a href="#weddingBreakfastMenu" class="portfolio-link" data-toggle="modal">See menu</a>
-                                    </div>
-                                    <input type="checkbox" name="entry.370530371" value="Yes"> Yes
+                                    <input type="checkbox" id="entry.370530371" name="entry.370530371" value="Yes" /> <label for="entry.370530371" style="display: inline">I would like the vegetarian option <a href="#weddingBreakfastMenu" class="portfolio-link" data-toggle="modal">for wedding breakfast.</a></label>
                                 </div>
                             </div>
                             <div class="col-md-6">
 
                                 <div class="form-group">
-                                    <input type="text" name="entry.326170422" class="form-control" placeholder="Song that will get you dancing" id="phone">
+                                    <input type="text" name="entry.326170422" class="form-control" placeholder="Song that will get you dancing"id="phone">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" name="entry.1607934741" placeholder="Special requirements, babies" id="message" style="height: 149px"></textarea>
+                                    <textarea class="form-control" name="entry.1607934741" placeholder="Special requirements, babies" id="message" style="height: 64pt"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -495,7 +501,7 @@
                     </form>
                 </div>
 
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload=""></iframe>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="rsvpSuccess()" onerror="alert('error')"></iframe>
             </div>
         </div>
     </section>

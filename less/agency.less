@@ -613,7 +613,9 @@ aside.clients {
 // Contact Section
 
 section.has-form {
-    @placeholder-text-color: @gray-light;
+    @placeholder-text-color: @gray-lightish;
+
+    color: @gray-lighter;
 
     background-color: @gray-darker;
     background-image: url('../img/mail-bg.png');
@@ -626,13 +628,20 @@ section.has-form {
         margin-bottom: 25px;
         input,
         textarea {
-            padding: 20px;
+            padding: 6pt 8pt;
         }
         input.form-control {
             height: auto;
         }
         textarea.form-control {
             height: 236px;
+        }
+        input[type=radio],
+        input[type=checkbox] {
+            width: 16pt;
+            height: 16pt;
+            margin: 0 5pt 0 0;
+            float: left;
         }
     }
     .form-control:focus {

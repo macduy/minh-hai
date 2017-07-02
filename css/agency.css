@@ -266,7 +266,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom.affix {
   background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid #efe6e6;
+  border-bottom: 1px solid ##efe6e6;
 }
 .navbar-custom.affix .navbar-nav {
   background: transparent;
@@ -309,7 +309,7 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom.affix {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 10px 0;
-    border-bottom: 1px solid #efe6e6;
+    border-bottom: 1px solid ##efe6e6;
   }
   .navbar-custom.affix .navbar-brand {
     opacity: 1.0;
@@ -661,6 +661,7 @@ aside.clients img {
   margin: 50px auto;
 }
 section.has-form {
+  color: #eeeeee;
   background-color: #222222;
   background-image: url('../img/mail-bg.png');
   background-position: center;
@@ -674,13 +675,20 @@ section.has-form .form-group {
 }
 section.has-form .form-group input,
 section.has-form .form-group textarea {
-  padding: 20px;
+  padding: 6pt 8pt;
 }
 section.has-form .form-group input.form-control {
   height: auto;
 }
 section.has-form .form-group textarea.form-control {
   height: 236px;
+}
+section.has-form .form-group input[type=radio],
+section.has-form .form-group input[type=checkbox] {
+  width: 16pt;
+  height: 16pt;
+  margin: 0 5pt 0 0;
+  float: left;
 }
 section.has-form .form-control:focus {
   border-color: #f09ea4;
@@ -690,27 +698,27 @@ section.has-form ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #777777;
+  color: #bebebe;
 }
 section.has-form :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #777777;
+  color: #bebebe;
 }
 section.has-form ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #777777;
+  color: #bebebe;
 }
 section.has-form :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #777777;
+  color: #bebebe;
 }
 section.has-form .text-danger {
   color: #e74c3c;

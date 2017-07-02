@@ -68,11 +68,11 @@ $(function() {
 var form = $('form[name=sendRsvp]');
 var successMessage = $('#rsvpResponse');
 
-form.on('submit', function() {
-  form.animate({ height: "hide", opacity: "hide"});
-  successMessage.animate({ height: "show", opacity: "show"});
-})
-
+// form.on('submit', function() {
+//   form.animate({ height: "hide", opacity: "hide"});
+//   successMessage.animate({ height: "show", opacity: "show"});
+// })
+//
 $('#resetForm').on('click', function() {
   form.trigger('reset');
   form.animate({ height: "show", opacity: "show"});
@@ -83,3 +83,9 @@ $('#resetForm').on('click', function() {
 $('#name').focus(function() {
     $('#success').html('');
 });
+
+function rsvpSuccess(a) {
+  console.log(a);
+  form.animate({ height: "hide", opacity: "hide"});
+  successMessage.animate({ height: "show", opacity: "show"});
+}
