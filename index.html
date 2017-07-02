@@ -448,60 +448,70 @@
                     <h3 class="section-subheading">Please submit separately for individual invitees.</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12" style="display:none" id="rsvpResponse">
-                    Your submission has been successfully recorded.
+            <div>
 
-                    <button id="resetForm" type="submit" class="btn btn-primary">Reset form</button>
+            <div class="row" style="display:none" id="rsvpResponse">
+                <div class="col-lg-12 text-center">
+                    <p>
+                        <img src="./img/green-leaf.png" height="40" width="40" />
+                    </p>
+                    <h3>Thank you</h3>
+                    <p>
+                        <b>Thank you for your prompt response.</b>
+                    </p>
+                    <p id="replyMessage">
+
+                    </p>
+                    <p>
+                        <button id="resetForm" type="submit" class="btn btn-primary">Respond for another invitee</button>
+                    </p>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-12">
-                    <form name="sendRsvp" enctype="text/plain" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSfYkG27X2DVLXo818AdS-grz7xnbm6VRflOYI8-9vQcXS4hYA/formResponse?">
+                    <form name="sendRsvp" enctype="text/plain" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSfYkG27X2DVLXo818AdS-grz7xnbm6VRflOYI8-9vQcXS4hYA/formResponse?">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="entry.747815805" class="form-control" placeholder="* Your full name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" name="entry.747815805" class="form-control" placeholder="* Full name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
                                     <div class="width: 50%">
                                         <input type="radio" id="entry1011176109yes" name="entry.1011176109" required data-validation-required-message="You have to let us know if you're coming." value="Yes">
-                                        <label for="entry1011176109yes">Accepts with pleasure</label>
+                                        <label for="entry1011176109yes">Accept with pleasure</label>
                                     </div>
                                     <div class="width: 50%">
                                         <input type="radio" id="entry1011176109no" name="entry.1011176109" required data-validation-required-message="You have to let us know if you're coming." value="No">
-                                        <label for="entry1011176109no">Declines with regrets</label>
+                                        <label for="entry1011176109no">Decline with regrets</label>
                                     </div>
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <!-- <div class="form-group">
-                                    <input type="text" name="entry.1563863328" class="form-control" placeholder="Dietary requirements">
-                                    <p class="help-block text-danger"></p>
-                                </div> -->
-                                <div class="form-group">
+                                <div class="form-group hide-if-declined">
                                     <input type="checkbox" id="entry.370530371" name="entry.370530371" value="Yes" /> <label for="entry.370530371" style="display: inline">I would like the vegetarian option <a href="#weddingBreakfastMenu" class="portfolio-link" data-toggle="modal">for wedding breakfast.</a></label>
                                 </div>
                             </div>
                             <div class="col-md-6">
 
-                                <div class="form-group">
-                                    <input type="text" name="entry.326170422" class="form-control" placeholder="Song that will get you dancing"id="phone">
+                                <div class="form-group hide-if-declined">
+                                    <input type="text" name="entry.326170422" class="form-control" placeholder="Song that will get me dancing"id="phone">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" name="entry.1607934741" placeholder="Special requirements, babies" id="message" style="height: 64pt"></textarea>
+                                    <textarea id="message" class="form-control" name="entry.1607934741" placeholder="Special requirements, babies" style="height: 64pt"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send RSVP</button>
+                                <button id="rsvpSubmit" type="submit" class="btn btn-xl">Send RSVP</button>
                             </div>
                         </div>
                     </form>
                 </div>
 
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="rsvpSuccess()" onerror="alert('error')"></iframe>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
             </div>
         </div>
     </section>

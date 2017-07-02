@@ -266,7 +266,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom.affix {
   background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid ##efe6e6;
+  border-bottom: 1px solid #efe6e6;
 }
 .navbar-custom.affix .navbar-nav {
   background: transparent;
@@ -309,7 +309,7 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom.affix {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 10px 0;
-    border-bottom: 1px solid ##efe6e6;
+    border-bottom: 1px solid #efe6e6;
   }
   .navbar-custom.affix .navbar-brand {
     opacity: 1.0;
@@ -336,8 +336,8 @@ header .intro-text .intro-lead-in {
   font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
   color: rgba(0, 0, 0, 0.6);
   font-style: italic;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 28px;
+  line-height: 24px;
   margin-bottom: 25px;
 }
 header .intro-text .intro-heading {
@@ -366,7 +366,7 @@ header .intro-text .intro-heading {
     padding-bottom: 350px;
   }
   header .intro-text .intro-lead-in {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.6);
     font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
     font-style: italic;
     font-size: 40px;
@@ -697,27 +697,27 @@ section.has-form .form-control:focus {
 section.has-form ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   color: #bebebe;
 }
 section.has-form :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   color: #bebebe;
 }
 section.has-form ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   color: #bebebe;
 }
 section.has-form :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   color: #bebebe;
 }
 section.has-form .text-danger {

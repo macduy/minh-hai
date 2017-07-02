@@ -1,5 +1,7 @@
 // Contact Form Scripts
 
+var COMMENT_PLACEHOLDER = "Any questions or special requirements (high chairs for babies, parking...)";
+
 $(function() {
 
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
@@ -68,24 +70,49 @@ $(function() {
 var form = $('form[name=sendRsvp]');
 var successMessage = $('#rsvpResponse');
 
-// form.on('submit', function() {
-//   form.animate({ height: "hide", opacity: "hide"});
-//   successMessage.animate({ height: "show", opacity: "show"});
-// })
-//
+$("#message").attr("placeholder", COMMENT_PLACEHOLDER);
+
+$("#entry1011176109yes, #entry1011176109no").on('change', function() {
+  if ($("#entry1011176109no:checked").val() == "No") {
+    $(".hide-if-declined").hide(200);
+    $("#message").attr("placeholder", "Personal message, creative excuse...");
+  } else {
+    $(".hide-if-declined").show(200);
+    $("#message").attr("placeholder", COMMENT_PLACEHOLDER);
+  }
+});
+
+form.on('submit', function() {
+  $("#rsvpSubmit").text("Sending...").attr("disabled", "disabled");
+
+  var accepted = $("#entry1011176109yes:checked").val() == "Yes";
+
+  if (accepted) {
+    $("#replyMessage").text("We look forward to seeing you at the wedding.");
+  } else {
+    $("#replyMessage").text("We regret you won't be able to attend the wedding.");
+  }
+})
+
+$("#hidden_iframe").on('load', function() {
+  $('html, body').stop().animate({
+      scrollTop: ($("#rsvp").offset().top - 50)
+  }, 750, 'easeInOutExpo');
+
+  form.stop().animate({ height: "hide", opacity: "hide"});
+  successMessage.stop().animate({ height: "show", opacity: "show"});
+});
+
 $('#resetForm').on('click', function() {
-  form.trigger('reset');
+  $("#rsvpSubmit").text("Send RSVP").removeAttr("disabled");
+  form.trigger("reset");
   form.animate({ height: "show", opacity: "show"});
   successMessage.animate({ height: "hide", opacity: "hide"});
+  $(".hide-if-declined").show();
+  $("#message").attr("placeholder", COMMENT_PLACEHOLDER);
 });
 
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
     $('#success').html('');
 });
-
-function rsvpSuccess(a) {
-  console.log(a);
-  form.animate({ height: "hide", opacity: "hide"});
-  successMessage.animate({ height: "show", opacity: "show"});
-}
