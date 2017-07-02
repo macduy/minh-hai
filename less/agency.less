@@ -98,9 +98,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-custom {
-    background-color: @navbar-colour;
+    background-color: rgba(255, 255, 255, 0.5);
     border-color: transparent;
+    border-bottom: 1px solid #eee;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    transition: background-color 0.5s;
     .navbar-brand {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
         color: rgb(52, 44, 44);
         font-weight: 500;
         letter-spacing: 8px;
@@ -125,6 +132,10 @@ h1, h2, h3, h4, h5, h6 {
         &:focus {
             background-color: @theme-primary;
         }
+    }
+    .navbar-nav {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .nav {
         li {
@@ -151,6 +162,14 @@ h1, h2, h3, h4, h5, h6 {
         color: white;
         background-color: darken(@theme-primary, 10%);
     }
+
+    &.affix {
+        background: @navbar-colour;
+
+        .navbar-brand {
+            opacity: 1.0;
+        }
+    }
 }
 
 @media(min-width:768px) {
@@ -168,6 +187,10 @@ h1, h2, h3, h4, h5, h6 {
             -moz-transition: all 0.3s;
             transition: all 0.3s;
         }
+
+        .navbar-nav {
+            background: transparent;
+        }
         .navbar-nav>.active>a {
             border-radius: 3px;
         }
@@ -180,6 +203,7 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-custom.affix {
         background-color: @navbar-colour;
         padding: 10px 0;
+        border-bottom: 1px solid #eee;
         .navbar-brand {
             opacity: 1.0;
             font-size: 1.5em;
@@ -196,8 +220,8 @@ header {
     text-align: center;
     color: white;
     .intro-text {
-        padding-top: 190px;
-        padding-bottom: 350px;
+        padding-top: 170px;
+        padding-bottom: 250px;
         .intro-lead-in {
             .script-font;
             color: rgba(0, 0, 0, 60%);
@@ -210,10 +234,25 @@ header {
             .heading-font;
             color: rgba(0, 0, 0, 80%);
             font-weight: 500;
-            letter-spacing: 15pt;
-            font-size: 40px;
+            letter-spacing: 6pt;
+            font-size: 34px;
             line-height: 50px;
             margin-bottom: 25px;
+        }
+    }
+}
+
+@media(min-width:410px) {
+    header {
+        .intro-text {
+            padding-top: 190px;
+            padding-bottom: 350px;
+            .intro-lead-in {
+            }
+            .intro-heading {
+                letter-spacing: 9pt;
+                font-size: 40px;
+            }
         }
     }
 }

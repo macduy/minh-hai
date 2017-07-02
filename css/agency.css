@@ -201,10 +201,17 @@ fieldset[disabled] .btn-xl.active {
   color: #ff9989;
 }
 .navbar-custom {
-  background-color: #eeeeee;
+  background-color: rgba(255, 255, 255, 0.5);
   border-color: transparent;
+  border-bottom: 1px solid #eee;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 .navbar-custom .navbar-brand {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
   color: #342c2c;
   font-weight: 500;
   letter-spacing: 8px;
@@ -232,6 +239,10 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-toggle:focus {
   background-color: #ff9989;
 }
+.navbar-custom .navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -254,6 +265,12 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #ff6d56;
 }
+.navbar-custom.affix {
+  background: rgba(255, 255, 255, 0.95);
+}
+.navbar-custom.affix .navbar-brand {
+  opacity: 1.0;
+}
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
@@ -270,14 +287,18 @@ fieldset[disabled] .btn-xl.active {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
+  .navbar-custom .navbar-nav {
+    background: transparent;
+  }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #eeeeee;
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 10px 0;
+    border-bottom: 1px solid #eee;
   }
   .navbar-custom.affix .navbar-brand {
     opacity: 1.0;
@@ -297,8 +318,8 @@ header {
   color: white;
 }
 header .intro-text {
-  padding-top: 190px;
-  padding-bottom: 350px;
+  padding-top: 170px;
+  padding-bottom: 250px;
 }
 header .intro-text .intro-lead-in {
   font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
@@ -313,10 +334,20 @@ header .intro-text .intro-heading {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 500;
-  letter-spacing: 15pt;
-  font-size: 40px;
+  letter-spacing: 6pt;
+  font-size: 34px;
   line-height: 50px;
   margin-bottom: 25px;
+}
+@media (min-width: 410px) {
+  header .intro-text {
+    padding-top: 190px;
+    padding-bottom: 350px;
+  }
+  header .intro-text .intro-heading {
+    letter-spacing: 9pt;
+    font-size: 40px;
+  }
 }
 @media (min-width: 768px) {
   header .intro-text {
