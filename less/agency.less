@@ -98,12 +98,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-custom {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
     border-color: transparent;
-    border-bottom: 1px solid #eee;
-    -webkit-transition: background-color 0.5s;
-    -moz-transition: background-color 0.5s;
-    transition: background-color 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
     .navbar-brand {
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
@@ -165,10 +164,17 @@ h1, h2, h3, h4, h5, h6 {
 
     &.affix {
         background: @navbar-colour;
+        border-bottom: 1px solid #eee;
 
         .navbar-brand {
             opacity: 1.0;
         }
+    }
+}
+
+@media(max-width: 767px) {
+    .navbar-nav {
+        .gradient(linear, rgba(255,255,255,70%) 40%, transparent);
     }
 }
 
