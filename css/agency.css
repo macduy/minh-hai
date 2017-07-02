@@ -679,9 +679,11 @@ section.has-form .form-group textarea {
 }
 section.has-form .form-group input.form-control {
   height: auto;
+  font-size: 16px;
 }
 section.has-form .form-group textarea.form-control {
   height: 236px;
+  font-size: 16px;
 }
 section.has-form .form-group input[type=radio],
 section.has-form .form-group input[type=checkbox] {
