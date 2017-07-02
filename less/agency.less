@@ -75,17 +75,36 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     border-radius: 3px;
     font-size: 18px;
-    padding: 20px 40px;
+    padding: 10px 30px;
+}
+
+@media(min-width:768px) {
+    .btn-xl {
+        .button-variant(white; @theme-primary; @theme-primary);
+        .heading-font;
+        font-weight: 700;
+        border-radius: 3px;
+        font-size: 18px;
+        padding: 20px 40px;
+    }
 }
 
 // Custom Navigation Bar
 
+.decorative-ampersand {
+    font-family: "Alice";
+    font-weight: normal;
+    color: @theme-primary;
+}
+
 .navbar-custom {
-    background-color: @gray-darker;
+    background-color: @navbar-colour;
     border-color: transparent;
     .navbar-brand {
-        color: @theme-primary;
-        .script-font;
+        color: rgb(52, 44, 44);
+        font-weight: 500;
+        letter-spacing: 8px;
+        .heading-font;
         &:hover,
         &:focus,
         &:active,
@@ -113,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
                 .heading-font;
                 font-weight: 400;
                 letter-spacing: 1px;
-                color: white;
+                color: @navbar-text-colour;
                 &:hover,
                 &:focus {
                     color: @theme-primary;
@@ -143,6 +162,7 @@ h1, h2, h3, h4, h5, h6 {
         transition: padding 0.3s;
         border: none;
         .navbar-brand {
+            opacity: 0.0;
             font-size: 2em;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
@@ -158,16 +178,17 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
     .navbar-custom.affix {
-        background-color: @gray-darker;
+        background-color: @navbar-colour;
         padding: 10px 0;
         .navbar-brand {
+            opacity: 1.0;
             font-size: 1.5em;
         }
     }
 }
 
 header {
-    background-image: url('../img/central-park-bridge.jpg');
+    background-image: url('../img/millennium-bridge.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -175,10 +196,11 @@ header {
     text-align: center;
     color: white;
     .intro-text {
-        padding-top: 100px;
-        padding-bottom: 50px;
+        padding-top: 190px;
+        padding-bottom: 350px;
         .intro-lead-in {
-            .serif-font;
+            .script-font;
+            color: rgba(0, 0, 0, 60%);
             font-style: italic;
             font-size: 22px;
             line-height: 22px;
@@ -186,8 +208,10 @@ header {
         }
         .intro-heading {
             .heading-font;
-            font-weight: 700;
-            font-size: 50px;
+            color: rgba(0, 0, 0, 80%);
+            font-weight: 500;
+            letter-spacing: 15pt;
+            font-size: 40px;
             line-height: 50px;
             margin-bottom: 25px;
         }
@@ -197,10 +221,11 @@ header {
 @media(min-width:768px) {
     header {
         .intro-text {
-            padding-top: 300px;
-            padding-bottom: 200px;
+            padding-top: 180px;
+            padding-bottom: 350px;
             .intro-lead-in {
-                .serif-font;
+                color: rgba(0, 0, 0, 40%);
+                .script-font;
                 font-style: italic;
                 font-size: 40px;
                 line-height: 40px;
@@ -208,7 +233,9 @@ header {
             }
             .intro-heading {
                 .heading-font;
-                font-weight: 700;
+                color: rgba(0, 0, 0, 80%);
+                letter-spacing: 18pt;
+                font-weight: 500;
                 font-size: 75px;
                 line-height: 75px;
                 margin-bottom: 50px;

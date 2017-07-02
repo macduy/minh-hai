@@ -56,14 +56,26 @@
 }
 
 .script-font() {
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 
 .body-font() {
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .heading-font() {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+}
+
+.gradient(@type; @colors; @dir: 0deg; @prefixes: webkit, moz, ms, o; @index: length(@prefixes)) when (@index > 0) {
+    .gradient(@type; @colors; @dir; @prefixes; (@index - 1));
+
+    @prefix  : extract(@prefixes, @index);
+    @dir-old : 90 - (@dir);
+
+    background-image: ~"-@{prefix}-@{type}-gradient(@{dir-old}, @{colors})";
+  & when ( @index = length(@prefixes) ) {
+        background-image: ~"@{type}-gradient(@{dir}, @{colors})";
+    }
 }

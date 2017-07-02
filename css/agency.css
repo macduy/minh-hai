@@ -5,7 +5,7 @@
  */
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
   color: #777777;
@@ -108,7 +108,7 @@ fieldset[disabled] .btn-primary.active {
   font-weight: 700;
   border-radius: 3px;
   font-size: 18px;
-  padding: 20px 40px;
+  padding: 10px 30px;
 }
 .btn-xl:hover,
 .btn-xl:focus,
@@ -146,13 +146,70 @@ fieldset[disabled] .btn-xl.active {
   color: #ff9989;
   background-color: white;
 }
+@media (min-width: 768px) {
+  .btn-xl {
+    color: white;
+    background-color: #ff9989;
+    border-color: #ff9989;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+  .btn-xl:hover,
+  .btn-xl:focus,
+  .btn-xl:active,
+  .btn-xl.active,
+  .open .dropdown-toggle.btn-xl {
+    color: white;
+    background-color: #ff6d56;
+    border-color: #ff644c;
+  }
+  .btn-xl:active,
+  .btn-xl.active,
+  .open .dropdown-toggle.btn-xl {
+    background-image: none;
+  }
+  .btn-xl.disabled,
+  .btn-xl[disabled],
+  fieldset[disabled] .btn-xl,
+  .btn-xl.disabled:hover,
+  .btn-xl[disabled]:hover,
+  fieldset[disabled] .btn-xl:hover,
+  .btn-xl.disabled:focus,
+  .btn-xl[disabled]:focus,
+  fieldset[disabled] .btn-xl:focus,
+  .btn-xl.disabled:active,
+  .btn-xl[disabled]:active,
+  fieldset[disabled] .btn-xl:active,
+  .btn-xl.disabled.active,
+  .btn-xl[disabled].active,
+  fieldset[disabled] .btn-xl.active {
+    background-color: #ff9989;
+    border-color: #ff9989;
+  }
+  .btn-xl .badge {
+    color: #ff9989;
+    background-color: white;
+  }
+}
+.decorative-ampersand {
+  font-family: "Alice";
+  font-weight: normal;
+  color: #ff9989;
+}
 .navbar-custom {
-  background-color: #222222;
+  background-color: #eeeeee;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #ff9989;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  color: #342c2c;
+  font-weight: 500;
+  letter-spacing: 8px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -180,7 +237,7 @@ fieldset[disabled] .btn-xl.active {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: white;
+  color: #444444;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
@@ -207,6 +264,7 @@ fieldset[disabled] .btn-xl.active {
     border: none;
   }
   .navbar-custom .navbar-brand {
+    opacity: 0.0;
     font-size: 2em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -218,15 +276,16 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: #eeeeee;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
+    opacity: 1.0;
     font-size: 1.5em;
   }
 }
 header {
-  background-image: url('../img/central-park-bridge.jpg');
+  background-image: url('../img/millennium-bridge.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -238,11 +297,12 @@ header {
   color: white;
 }
 header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 190px;
+  padding-bottom: 350px;
 }
 header .intro-text .intro-lead-in {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  color: rgba(0, 0, 0, 0.6);
   font-style: italic;
   font-size: 22px;
   line-height: 22px;
@@ -251,18 +311,21 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 50px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  letter-spacing: 15pt;
+  font-size: 40px;
   line-height: 50px;
   margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-top: 180px;
+    padding-bottom: 350px;
   }
   header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
     font-style: italic;
     font-size: 40px;
     line-height: 40px;
@@ -271,7 +334,9 @@ header .intro-text .intro-heading {
   header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 18pt;
+    font-weight: 500;
     font-size: 75px;
     line-height: 75px;
     margin-bottom: 50px;
