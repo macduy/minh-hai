@@ -266,14 +266,20 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom.affix {
   background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #efe6e6;
+}
+.navbar-custom.affix .navbar-nav {
+  background: transparent;
 }
 .navbar-custom.affix .navbar-brand {
   opacity: 1.0;
 }
 @media (max-width: 767px) {
   .navbar-nav {
-    background: #c14227;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+    background: rgba(255, 255, 255, 0.6);
   }
 }
 @media (min-width: 768px) {
@@ -303,7 +309,7 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom.affix {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #efe6e6;
   }
   .navbar-custom.affix .navbar-brand {
     opacity: 1.0;

@@ -164,8 +164,11 @@ h1, h2, h3, h4, h5, h6 {
 
     &.affix {
         background: @navbar-colour;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid @border-color;
 
+        .navbar-nav {
+            background: transparent;
+        }
         .navbar-brand {
             opacity: 1.0;
         }
@@ -174,7 +177,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(max-width: 767px) {
     .navbar-nav {
-        background: rgb(193, 66, 39);
+        -webkit-transition: background 0.3s;
+        -moz-transition: background 0.3s;
+        transition: background 0.3s;
+        background: rgba(255,255,255, 60%);
     }
 }
 
@@ -209,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-custom.affix {
         background-color: @navbar-colour;
         padding: 10px 0;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid @border-color;
         .navbar-brand {
             opacity: 1.0;
             font-size: 1.5em;
