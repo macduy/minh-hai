@@ -88,9 +88,9 @@ form.on('submit', function() {
   var accepted = $("#entry1011176109yes:checked").val() == "Yes";
 
   if (accepted) {
-    $("#replyMessage").text("We look forward to seeing you at the wedding.");
+    $("#replyMessage").html("We are honoured you have accepted our invitation <br/>and we look forward to seeing you at the wedding!");
   } else {
-    $("#replyMessage").text("We regret you won't be able to attend the wedding.");
+    $("#replyMessage").html("We regret that you won't be able to attend the wedding.<br/> We hope to see you in not-too-distant future.");
   }
 })
 

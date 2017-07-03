@@ -576,9 +576,13 @@ section h3.section-subheading {
 .timeline .timeline-heading h4 {
   margin-top: 0;
   color: inherit;
-}
-.timeline .timeline-heading h4.subheading {
+  font-weight: 400;
   text-transform: none;
+  font-size: 1.6em;
+}
+.timeline .timeline-heading h5.subheading {
+  font-weight: 500;
+  color: #bebebe;
 }
 .timeline .timeline-body > p,
 .timeline .timeline-body > ul {
