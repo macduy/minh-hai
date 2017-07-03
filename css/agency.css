@@ -3,12 +3,6 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-.tilt-right {
-  transform: rotate(3deg);
-}
-.tilt-left {
-  transform: rotate(-3deg);
-}
 body {
   overflow-x: hidden;
   font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
