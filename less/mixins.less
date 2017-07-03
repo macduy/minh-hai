@@ -68,6 +68,14 @@
   text-transform: uppercase;
 }
 
+.tilt-right {
+  transform: rotate(7deg);
+}
+
+.tilt-left {
+  transform: rotate(-3deg);
+}
+
 .gradient(@type; @colors; @dir: 0deg; @prefixes: webkit, moz, ms, o; @index: length(@prefixes)) when (@index > 0) {
     .gradient(@type; @colors; @dir; @prefixes; (@index - 1));
 
