@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 .tilt-right {
-  transform: rotate(7deg);
+  transform: rotate(3deg);
 }
 .tilt-left {
   transform: rotate(-3deg);
@@ -498,7 +498,7 @@ section h3.section-subheading {
   content: "";
   width: 2px;
   background-color: #f1f1f1;
-  left: 40px;
+  left: 50px;
   margin-left: -1.5px;
 }
 .timeline > li {
@@ -534,24 +534,28 @@ section h3.section-subheading {
   right: auto;
 }
 .timeline > li .timeline-image {
-  left: 0;
+  left: -3px;
+  top: -3pt;
   margin-left: 0;
-  width: 80px;
-  height: 85px;
+  width: 95px;
   position: absolute;
   z-index: 100;
-  background-color: #f09ea4;
+  background-color: transparent;
   color: white;
   border-radius: 0%;
-  border: 3px solid #ffffff;
-  border-bottom-width: 8px;
+  border: 4px solid #ffffff;
+  border-bottom-width: 20px;
   text-align: center;
   box-shadow: 0 3pt 7pt #dddddd;
 }
 .timeline > li .timeline-image h4 {
-  font-size: 10px;
-  margin-top: 12px;
-  line-height: 14px;
+  font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  text-transform: none;
+  font-size: 16pt;
+  line-height: 18pt;
+}
+.timeline > li .timeline-image.themed {
+  background-color: #f09ea4;
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
@@ -603,17 +607,18 @@ section h3.section-subheading {
     text-align: right;
   }
   .timeline > li .timeline-image {
-    width: 100px;
-    height: 110px;
+    width: 140px;
     left: 50%;
-    margin-left: -50px;
+    margin-left: -70px;
     border: 5px solid #ffffff;
-    border-bottom-width: 15px;
+    border-bottom-width: 30px;
   }
   .timeline > li .timeline-image h4 {
-    font-size: 13px;
-    margin-top: 16px;
-    line-height: 18px;
+    font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    text-transform: none;
+    font-size: 20pt;
+    line-height: 26pt;
+    margin: 15pt 0pt;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
@@ -629,16 +634,13 @@ section h3.section-subheading {
     padding: 0 20px 20px;
   }
   .timeline > li .timeline-image {
-    width: 150px;
-    height: 165px;
-    margin-left: -75px;
-    border: 7px solid #ffffff;
-    border-bottom-width: 23px;
+    width: 170px;
+    margin-left: -85px;
+    border: 6px solid #ffffff;
+    border-bottom-width: 34px;
   }
   .timeline > li .timeline-image h4 {
-    font-size: 18px;
-    margin-top: 30px;
-    line-height: 26px;
+    margin: 20pt 0pt;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
@@ -652,14 +654,13 @@ section h3.section-subheading {
     padding: 0 20px 20px 100px;
   }
   .timeline > li .timeline-image {
-    width: 170px;
-    height: 190px;
-    margin-left: -85px;
-    border: 7px solid #ffffff;
-    border-bottom-width: 27px;
+    width: 210px;
+    margin-left: -105px;
+    border: 8px solid #ffffff;
+    border-bottom-width: 45px;
   }
   .timeline > li .timeline-image h4 {
-    margin-top: 40px;
+    margin: 40px 0;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
