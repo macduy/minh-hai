@@ -498,7 +498,7 @@ section h3.section-subheading {
 .timeline > li {
   margin-bottom: 50px;
   position: relative;
-  min-height: 50px;
+  min-height: 75px;
 }
 .timeline > li:before,
 .timeline > li:after {
