@@ -436,11 +436,10 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">When</h4>
+                    <h4 class="service-heading">30th September 2017</h4>
                     <p class="text-muted">
-                        30th September 2017</br>
-                        Afternoon guests, 2:45pm ceremony starts<br/>
-                        Evening guests, 7:00pm evening reception
+                        Afternoon guests, 2:45pm for ceremony<br/>
+                        Evening guests, 7:00pm for   reception
                     </br/>
                     </p>
                 </div>
@@ -449,10 +448,11 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Where</h4>
+                    <h4 class="service-heading">Lady Margaret Hall</h4>
                     <p class="text-muted">
-                        Lady Margaret Hall,
-                        Norham Gardens,
+                        Norham Gardens<br/>
+                        Oxford, UK
+                    </br/>
                     </p></p>
                 </div>
                 <div class="col-sm-3"></div>
@@ -817,7 +817,10 @@
             var lmh = {lat: 51.7646623, lng: -1.2564537 };
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 7,
-                center: {lat: 51.6390103, lng: -0.6753127}
+                center: {lat: 51.6390103, lng: -0.6753127},
+                  mapTypeControl: false,
+                  streetViewControl: false,
+                  fullscreenControl: true
             });
             var marker = new google.maps.Marker({
                 position: lmh,
