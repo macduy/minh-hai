@@ -1,6 +1,6 @@
 // Contact Form Scripts
 
-var COMMENT_PLACEHOLDER = "Any questions or special requirements (high chairs for babies, parking...)";
+var COMMENT_PLACEHOLDER = "Any questions or special requirements (parking, baby chairs, tips for stay...)";
 
 $(function() {
 

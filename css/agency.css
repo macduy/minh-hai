@@ -8,7 +8,7 @@ body {
   font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 label {
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
@@ -43,14 +43,23 @@ a.active {
   color: #e9727b;
 }
 h1,
-h2,
-h3,
+h2 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+h3 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
 h4,
 h5,
 h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  margin-top: 16pt;
+  font-weight: 400;
 }
 .img-centered {
   margin: 0 auto;
@@ -400,7 +409,7 @@ section h2.section-heading {
 }
 section h3.section-subheading {
   font-size: 16px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
   font-style: italic;
   font-weight: 400;
@@ -467,7 +476,7 @@ section h3.section-subheading {
   margin: 0;
 }
 #portfolio .portfolio-item .portfolio-caption p {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
   margin: 0;
@@ -479,6 +488,9 @@ section h3.section-subheading {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
+}
+subscript {
+  font-size: 65%;
 }
 .timeline {
   list-style: none;
@@ -572,6 +584,7 @@ section h3.section-subheading {
   margin-bottom: 0;
 }
 .timeline .timeline-heading h4 {
+  display: none;
   margin-top: 0;
   color: inherit;
   font-weight: 400;
@@ -579,8 +592,10 @@ section h3.section-subheading {
   font-size: 1.6em;
 }
 .timeline .timeline-heading h5.subheading {
-  font-weight: 500;
-  color: #bebebe;
+  text-transform: uppercase;
+  margin-top: -5pt;
+  font-weight: 400;
+  color: #f09ea4;
 }
 .timeline .timeline-body > p,
 .timeline .timeline-body > ul {
@@ -822,7 +837,7 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
 }

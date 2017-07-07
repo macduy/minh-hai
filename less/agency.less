@@ -9,7 +9,7 @@ body {
 }
 
 label {
-    font-weight: normal;
+    font-weight: 400;
     .heading-font;
     text-transform: none;
 }
@@ -50,9 +50,20 @@ a.active {
     color: darken(@theme-primary, 10%);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     .heading-font;
-    font-weight: 700;
+    font-weight: 100;
+}
+
+h3 {
+    .heading-font;
+    font-weight: 400;
+}
+
+h4, h5, h6 {
+    .heading-font;
+    margin-top: 16pt;
+    font-weight: 400;
 }
 
 .img-centered {
@@ -406,6 +417,10 @@ section {
     }
 }
 
+subscript {
+    font-size: 65%;
+}
+
 // Timeline
 
 .timeline {
@@ -501,6 +516,7 @@ section {
     }
     .timeline-heading {
         h4 {
+            display: none;
             margin-top: 0;
             color: inherit;
             font-weight: 400;
@@ -508,8 +524,10 @@ section {
             font-size: 1.6em;
         }
         h5.subheading {
-            font-weight: 500;
-            color: @gray-lightish;
+            text-transform: uppercase;
+            margin-top: -5pt;
+            font-weight: 400;
+            color: @theme-primary;
         }
     }
     .timeline-body {
