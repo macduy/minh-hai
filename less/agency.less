@@ -95,13 +95,18 @@ h4, h5, h6 {
     padding: 10px 30px;
 }
 
+.btn-md {
+    .button-variant(@theme-primary; transparent; @theme-primary);
+    .heading-font;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-width: 3px;
+}
+
 @media(min-width:768px) {
-    .btn-xl {
-        .button-variant(white; @theme-primary; @theme-primary);
-        .heading-font;
-        font-weight: 700;
-        border-radius: 3px;
-        font-size: 18px;
+    .btn {
         padding: 20px 40px;
     }
 }

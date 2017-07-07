@@ -161,53 +161,57 @@ fieldset[disabled] .btn-xl.active {
   color: #f09ea4;
   background-color: white;
 }
+.btn-md {
+  color: #f09ea4;
+  background-color: transparent;
+  border-color: #f09ea4;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-width: 3px;
+}
+.btn-md:hover,
+.btn-md:focus,
+.btn-md:active,
+.btn-md.active,
+.open .dropdown-toggle.btn-md {
+  color: #f09ea4;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #e86972;
+}
+.btn-md:active,
+.btn-md.active,
+.open .dropdown-toggle.btn-md {
+  background-image: none;
+}
+.btn-md.disabled,
+.btn-md[disabled],
+fieldset[disabled] .btn-md,
+.btn-md.disabled:hover,
+.btn-md[disabled]:hover,
+fieldset[disabled] .btn-md:hover,
+.btn-md.disabled:focus,
+.btn-md[disabled]:focus,
+fieldset[disabled] .btn-md:focus,
+.btn-md.disabled:active,
+.btn-md[disabled]:active,
+fieldset[disabled] .btn-md:active,
+.btn-md.disabled.active,
+.btn-md[disabled].active,
+fieldset[disabled] .btn-md.active {
+  background-color: transparent;
+  border-color: #f09ea4;
+}
+.btn-md .badge {
+  color: transparent;
+  background-color: #f09ea4;
+}
 @media (min-width: 768px) {
-  .btn-xl {
-    color: white;
-    background-color: #f09ea4;
-    border-color: #f09ea4;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 3px;
-    font-size: 18px;
+  .btn {
     padding: 20px 40px;
-  }
-  .btn-xl:hover,
-  .btn-xl:focus,
-  .btn-xl:active,
-  .btn-xl.active,
-  .open .dropdown-toggle.btn-xl {
-    color: white;
-    background-color: #e9727b;
-    border-color: #e86972;
-  }
-  .btn-xl:active,
-  .btn-xl.active,
-  .open .dropdown-toggle.btn-xl {
-    background-image: none;
-  }
-  .btn-xl.disabled,
-  .btn-xl[disabled],
-  fieldset[disabled] .btn-xl,
-  .btn-xl.disabled:hover,
-  .btn-xl[disabled]:hover,
-  fieldset[disabled] .btn-xl:hover,
-  .btn-xl.disabled:focus,
-  .btn-xl[disabled]:focus,
-  fieldset[disabled] .btn-xl:focus,
-  .btn-xl.disabled:active,
-  .btn-xl[disabled]:active,
-  fieldset[disabled] .btn-xl:active,
-  .btn-xl.disabled.active,
-  .btn-xl[disabled].active,
-  fieldset[disabled] .btn-xl.active {
-    background-color: #f09ea4;
-    border-color: #f09ea4;
-  }
-  .btn-xl .badge {
-    color: #f09ea4;
-    background-color: white;
   }
 }
 .decorative-ampersand {
