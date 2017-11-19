@@ -463,26 +463,6 @@
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
 
-    <!-- Map -->
-    <script>
-        function initMap() {
-            var lmh = {lat: 51.7646623, lng: -1.2564537 };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 7,
-                center: {lat: 51.6390103, lng: -0.6753127},
-                  mapTypeControl: false,
-                  streetViewControl: false,
-                  fullscreenControl: true
-            });
-            var marker = new google.maps.Marker({
-                position: lmh,
-                map: map
-            });
-         }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr6wWU1yNgkax-wlzE9nWBlmOwZEqKCrE&callback=initMap"
-    async defer></script>
-
 </body>
 
 </html>
