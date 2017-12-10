@@ -469,6 +469,7 @@ section .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-conten
   margin: 0;
 }
 section .portfolio-item .portfolio-caption {
+  color: #555555;
   max-width: 400px;
   margin: 0 auto;
   background-color: white;
@@ -480,8 +481,8 @@ section .portfolio-item .portfolio-caption h4 {
   margin: 0;
 }
 section .portfolio-item .portfolio-caption p {
-  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
   font-size: 16px;
   margin: 0;
 }
